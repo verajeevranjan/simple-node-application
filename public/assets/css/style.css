@@ -119,7 +119,7 @@ h1 small {
 	padding:0 0 0 1px;
 	height:15px;
 	float:left;
-	background:url(../images/menu_split.gif) no-repeat left center;
+	/*background:url(../images/menu_split.gif) no-repeat left center;*/
 }
 .menu_nav ul li {
 	margin:0;
@@ -127,6 +127,9 @@ h1 small {
 	float:left;
 	background:url(../images/menu_split.gif) no-repeat right center;
 }
+.menu_nav ul li:last-child {
+   background:none; 
+} 
 .menu_nav ul li a {
 	display:block;
 	margin:0;
