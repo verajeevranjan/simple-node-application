@@ -10,8 +10,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs'); // set up ejs for templating
 app.use(express.static(__dirname + '/public/assets'));
 
+var data = require('./app/pages.json');
+
 /* ################################## Call Routes ################################## */
-require('./app/routes.js')(app);
+require('./app/routes.js')(app,data);
 
 app.listen(3000);
 
